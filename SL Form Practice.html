@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="eng">
 <head>
 
@@ -16,46 +16,45 @@
         }  
            button {
             background: blueviolet;
-            border: 1;
+            border: 2;
             color: white;
             font-size: 12px;
             height: 50px;
             width: 200px;
             text-transform: uppercase;
         }
-     </style>
-
-    <div>
-        <label for="first_name">First Name</label> 
-        <input type="text"name="firstname" id="'first_name" />
-    
-        <label for="last_name">Last Name</label>
-        <input type="text" name="lastname" id="last_name" />
-    </div>
-    <div>
-        <label for="mobile_phone_number">Mobile Phone Number</label><br />
-        <input type="number" name="mobilephonenumber" id="mobile_phone_number" />
-    </div>
-    <div>
-        <style>
-            input {
+        input {
                 width: fit-content;
             }
-        </style>
-        <label for="e-mail_address">E-Mail Address</label><br />
+     </style>
+    <div>
+        
+        <b><label for="first_name">First Name</label></b>
+        <input type="text"name="firstname" id="'first_name" />
+    
+        <b><label for="last_name">Last Name</label></b>
+        <input type="text" name="lastname" id="last_name" />
+    </div>
+    <br />
+    <div>
+        <b><label for="mobile_phone_number">Mobile Phone Number</label></b>
+        <input type="number" name="mobilephonenumber" id="mobile_phone_number" />
+
+       <b><label for="e-mail_address">E-Mail Address</label></b>
         <input type="email" name="e-mailaddress" id="e-mail_address" />
     </div>
     <br />
     <label for="which_form_of_communication_is_the_best_way_to_contact_you?">Which form of communication is the best way to contact you?  Please check one.</label>
     
     <div>
-        <input type="checkbox" name="Best Contact1" value="E-Mail" /> E-Mail>
+        <input type="checkbox" name="Best Contact1" value="E-Mail" /> E-Mail
         <input type="checkbox" name="Best Contact2" value="Text"/> Text
     </div>
     <div>
     <br />
     <label for="message">Questions and/or Comments:</label><br />
     <textarea id="message" rows="6" cols="40"></textarea>
+    
     </div>
     <button type="submit">Submit</button>
 </form>
