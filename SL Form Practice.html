@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="eng">
 <head>
 
@@ -13,6 +13,7 @@
        label {
             font-family: 'Times New Roman', Times, serif;
             font-size: large;
+            color: blue;
         }  
            button {
             background: blueviolet;
@@ -27,8 +28,8 @@
                 width: fit-content;
             }
      </style>
+     <fieldset>
     <div>
-        
         <b><label for="first_name">First Name</label></b>
         <input type="text"name="firstname" id="'first_name" />
     
@@ -43,8 +44,9 @@
        <b><label for="e-mail_address">E-Mail Address</label></b>
         <input type="email" name="e-mailaddress" id="e-mail_address" />
     </div>
+    </fieldset>
     <br />
-    <label for="which_form_of_communication_is_the_best_way_to_contact_you?">Which form of communication is the best way to contact you?  Please check one.</label>
+    <label for="which_form_of_communication_is_the_best_way_to_contact_you?">Which form of communication is the best way to contact you?  Please check one.</label><b/>
     
     <div>
         <input type="checkbox" name="Best Contact1" value="E-Mail" /> E-Mail
@@ -56,6 +58,10 @@
     <textarea id="message" rows="6" cols="40"></textarea>
     
     </div>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
     <button type="submit">Submit</button>
 </form>
 </body>
