@@ -1,54 +1,120 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
     <meta charset="ut-8">
-<head>
+    <meta name="viewport" content="width=device-width,height=device-width,inital=scale=1">
+<header>
 <title>Safiya's Page</title>
-<h1>WELCOME TO THE QUEEN'S WEBPAGE</h1>
-<script></script>
+<h1>WELCOME TO THE QUEEN'S WEBPAGE</h1>  
 <noscript> Safiya's Page</noscript>
-</head>
+</header>
 <style>
-menu {
-display: block;
- list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
+    header {
+font-size:xx-large;
+font-style: initial;
+font-family:Georgia, 'Times New Roman', Times, serif;
+color: purple;
+font-weight: 400px;
+    }
+    h2 {
+        color:navy;
+        font-family: cursive;
+    font-weight: 300px;
+    color: blueviolet;
+    height: 70px;
+    width: 200px;
+    padding-block: 20px;
+    }
+    body {
+        background-image: url("https://images.pexels.com/photos/7130469/pexels-photo-7130469.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load");
+    }
+  
     font {
         font-family: 'Times New Roman', Times, serif;
         font-size: larger;
         font-weight: 200;
     }
-nav {
-    flex-direction: column-reverse;
-    font-family: cursive;
-    height: 100px;
-    height: 50px;
-    padding-block: 2px;
-    align-items: center;
-    justify-content: space-between;
-    background-color: aqua;
 
-}
-
+body{
+        column-count: 3;
+        column-gap: 35px;
+        column-rule: solid;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size:large
+    }
+    footer {
+        column-count: 3; 
+        float: 50px;
+    }
+     /* Desktop */
+     @media screen and (max-width: 600px)
+                {
+                    body {
+                        color:red;
+                    }
+                }
+                /* Media Query for Modile Devices */
+                @media screen and (min-width: 768px) {
+                    body {
+                        background-color: yellow;
+                        }
+                }
+    
 </style>
 <body>
-    <header>
-        <div class="musicbox"
-        <audio controls autoplay>
+    <br>
+    <h2><p>Bio about Me</p></h2>
+    <ul>
+        <li>44 years old</li>
+        <br>
+        <li>Born in Philadelphia, Pa, but lived all over the U.S.</li>
+        <br>
+        <li>Have 2 older brothers and 1 older sister</li>
+        <br>
+        <li> Work Full-Time</li>
+    </ul>
+    
 
-        </audio>
-    </div> 
-    <nav><h2><p>Bio about Me</p></h2></nav>
+<h2><p>The Heels Side of Me</p></h2>
+<picture>
+    <img src="https://cdn.pixabay.com/photo/2015/01/06/16/24/shoe-590516_1280.jpg" style="width: 125px;height:125px;">
+</picture>
 <br>
-    <nav><h2><p>The Heels Side of Me</p></h2></nav>
+    <p>With an AA and BA Degree in Business/Marketing and over twenty years in the work field, I will be able to help navigate your company to be more successful 
+    through the different advertising media outlets. From my experience of being a Media Buyer, my effective negotiation tactics will allow me to seal the best deal for your company.
+     I currently have a client-facing role coordinating monthly campaigns, but have had positions that involved direct interaction with a client within an Advertising Agency. 
+     My comprehensive knowledge due to my well-rounded perspective within the industry gives me the ability to look at the bigger picture. I am a very ambitious person, have a thirst for knowledge, 
+     and have a passion for learning new things.</p>
 <br>
-    <nav><h2><p>The Sneaker Side of Me</p></h2></nav> 
-   <br>     
+<br>
+<br>
+
+    <picture>
+        <img src="https://cdn.pixabay.com/photo/2022/07/02/20/06/basketball-7297998_1280.jpg" style="width: 125px;height:125px;">
+    </picture>
+    <h2><p>The Sneaker Side of Me</p></h2>
+    <p>I am a big time music lover that loves to spend my time enjoying good music of all kinds. My main love is old skool hip-hop & R&B, but will catch me jammin' to some jazz, pop or alternative music.
+        When I am not working my 9 to 5, I love to write, binge-watch some good tv series and documentaries, listen to some audio-books, and work out at the gym.
+    </p>
+   <br> 
+   <div>
+    <video width="320px" height="240px" controls>
+       <source src="https://www.vecteezy.com/video/23152644-ocean-day-to-night-timelapse.mp4" type="video/mp4"/>
+   <source src="https://www.vecteezy.com/video/23152644-ocean-day-to-night-timelapse.mp4" type="video/webM"/>
+     Your browser does not support the video element. Kindly update it to latest version.   
+     <video width="320" height="240" poster="https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.webM"
+        Your browser does not support the video
+       </video>
+   </div>    
     </header>
+    <footer>
+        <h3>Social</h3>
+        <br>
+        <h3>Contact</h3>
+        <br>
+        <h3>Navigation</h3>
+</footer>
 </body>
 
 </html>
