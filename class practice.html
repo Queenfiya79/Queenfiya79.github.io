@@ -1,29 +1,31 @@
-<html>
 <!DOCTYPE html>
-<html lang="eng"
-<meta charset="ut-8">
-<meta name="veiwport" content="width=device-width", initial-scale="1">
-
-<head>
-    <title>Cardsheet Practice</title>
-    <style>
-        div {
-            background-color: blanchedalmond;
-            display: flexbox;
-           border: black;
-           border-radius: auto;
-           
-    </style>
-</head>
+<html lang="eng">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0">
+        <title>My Assignment</title>
+        </head>
 <body>
+</h1>Task Form</h1>
+<div id="Task_Assignments" class="assignedTask"></div>
+<input type="text" id="taskInput">
+<button id="AddTaskBtn">Add Task to User</button>
+<script>
+const tasks=[
+    "Wash and dry the dishes.",
+    "Empty all the downstairs trash and take it outside.",
+    "Sweep and Mop the kitchen floor.",
+    "Vacuum the Living room floor.",
+    "Clean the downstairs Powder Room",
+    "Dust all the downstairs.",
+]
+let volunteer=["Ray","Becky","Pat","Holly","Matt","Joe"]
+function displayTask(){
+let randIndex=Math.floor(Math.random()*tasks.length);
+document.getElementById("assigned_task").innerHTML=volunteer[randIndex]
+}
+</script>
     
-    <div class="container">
-        <img src="https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg" alt="night time skies">
-<h1>Night Time View</h1>
-<br>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione at molestias velit dolore architecto vitae corporis qui sint earum adipisci possimus libero facere obcaecati, magnam consequatur ipsa perferendis? Adipisci, ducimus!</p>
-<br>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sint saepe ullam non impedit amet itaque odit molestias cupiditate, minus corrupti cumque in expedita quia. Sunt illum officiis suscipit error.</p>
-    </div>
+
 </body>
 </html>
