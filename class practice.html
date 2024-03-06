@@ -6,31 +6,34 @@
         </head>
  <body>
    
-           
-            <div id="software_reviews" class="softwarereviews"></div>
-            <button class="random-btn">surprise me</button>
+           <div id="person-img"></div>
+           <div id="author"></div>
+           <div id="job"></div>
+           <div id="info"
+        
+           <button class="random-btn">surprise me</button>
+
     <script>
 // local reviews data
-const software reviews = [
+const softwareReviews = [
     {
-        id: 0
-        name: Bryan Jackson
-        job: Freelance Writer
-        img: "/Users/queenfiya/Downloads/Images/fashion-guy-green-jacket-l-looking-camera-120479427.webp",
-        text: 
-       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, tempora culpa. Provident,<br>
+        id: 0,
+       name = "Bryan Jackson",
+        job = "Freelance Writer",
+        img = "/Users/queenfiya/Downloads/Images/fashion-guy-green-jacket-l-looking-camera-120479427.webp",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, tempora culpa. Provident,<br>
         debitis maiores. Quis voluptate, Quis voluptatedebitis maiores. Quis voluptate, Quis voluptate",
-
+    },
+    {
         id: 1,
-        name: "Jessica Long"
-        job: "English College Professor"
+        name:  "Jessica Long",
+        job: "English College Professor",
         img: "/Users/queenfiya/Downloads/Images/beautiful-young-asian-woman-clean-fresh-skin-beautiful-young-asian-woman-clean-fresh-skin-face-care-facial-treatment-153641423.webp",
-        text:
-            "this writing software is complimentary.
+        text:"this writing software is complimentary.
             i use it every Tuesday when i'm in my store.
             I saw one of these in Sao Tome and Principe and I bought one.
             My co-worker Merwin has one of these. He says it looks bubbly.
-            It only works when I'm Niger.
+            It only works when I'm at work.
             My co-worker Nile has one of these. He says it looks crooked.
             talk about contempt!!!
             i use it once a week when i'm in my firetruck.
@@ -42,10 +45,9 @@ const software reviews = [
     {
         id: 2,
         name: "Matt Lopskin",
-        job: "Freelance Writer For a Sports Magazine"
+        job: "Freelance Writer For a Sports Magazine",
         img: "/Users/queenfiya/Downloads/Images/fashion-guy-green-jacket-l-looking-camera-120479427.webp",
-        text:
-        "this writing software is mellow.
+        text:"this writing software is mellow.
         My neighbor Isabela has one of these. She works as a taxidermist and she says it looks monochromatic.
         My locust loves to play with it.
         My neighbor Ardeth has one of these. She works as a gasman and she says it looks fuzzy.
@@ -57,7 +59,7 @@ const software reviews = [
         My neighbor Lular has one of these. She works as a cake decorator and she says it looks ragged.
         talk about shame.
         This writing software works very well. It persistently improves my soccer by a lot.",
-    }
+    },
     {
         id: 3,
         name: "Becky Goodwind",
@@ -72,7 +74,7 @@ const software reviews = [
         My gentoo penguin loves to play with it.
         My co-worker Mitchell has one of these. He says it looks dry.
         My neighbor Allean has one of these. She works as a sky diver and she says it looks weedy.",
-    }
+    },
 ];
 
 // select items
@@ -94,19 +96,19 @@ window.addEventListener('DOMContentLoaded' ,function () {
 // show person based on item
 
 function showPerson(person) {
-    const item = software reviews[person]
+    const item = softwareReviews[person]
     img.src = item.img;
     author.textContent = item.name;
     job.textContent = item.job;
     info.textContent = item.text;
 
 }
-function displaySoftwarereviews(){
-    let randIndex = Math.floor(Math.random()* software.length);
-    document.getElementById(software_reviews).innerHTML = software reviews[randIndex];
+function displaySoftwareReviews(){
+    let randIndex = Math.floor(Math.random()* softwareReviews.length);
+    showPerson(randIndex)
 }
 
-    displaySoftwareReviews();
+randomBtn.addEventListener('click', displaySoftwareReviews);
     </script>
 
 </body>
